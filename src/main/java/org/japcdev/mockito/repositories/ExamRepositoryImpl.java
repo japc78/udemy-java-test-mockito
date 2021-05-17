@@ -1,0 +1,14 @@
+package org.japcdev.mockito.repositories;
+
+import org.japcdev.mockito.models.Exam;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class ExamRepositoryImpl implements ExamRepository{
+    @Override
+    public List<Exam> findAll() {
+        return Arrays.asList(new Exam(5L, "Mathematics"), new Exam(6L, "Language"),
+                new Exam(7L, "History"));
+    }
+}
